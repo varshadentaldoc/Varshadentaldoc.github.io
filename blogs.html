@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs-Varsha</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="Varsha.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      lucide.createIcons();
+    });
+  </script>
+</head>
+
+<body class="bg-white text-black">
+  <nav class="fixed top-5 left-1/2 w-11/12 max-w-5xl transform -translate-x-1/2 bg-white text-black border-2 border-black rounded-xl shadow-lg z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <div class="flex items-center">
+          <a href="#" class="text-2xl font-mono font-bold text-black">Varsha K</a>
+        </div>
+        <div class="lg:hidden">
+          <button id="nav-toggle" class="text-black focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex space-x-8">
+          <a href="index.html" class="text-black font-mono hover:bg-gray-700 px-3 py-2 rounded-xl border-2 border-black transition duration-300">Home</a>
+          <a href="blogs.html" class="text-black font-mono hover:bg-gray-700 px-3 py-2 rounded-xl border-2 border-black transition duration-300">Blogs</a>
+          <a href="resume.html" class="text-black font-mono hover:bg-gray-700 px-3 py-2 rounded-xl border-2 border-black transition duration-300">Resume</a>
+        </div>
+      </div>
+      <div id="mobile-menu" class="lg:hidden hidden py-4 rounded-b-lg px-4">
+        <a href="index.html" class="block py-2 text-black hover:bg-gray-700 px-3 rounded-xl border-2 border-black transition duration-300">Home</a>
+        <a href="blogs.html" class="block py-2 text-black hover:bg-gray-700 px-3 rounded-xl border-2 border-black transition duration-300">Blogs</a>
+        <a href="resume.html" class="block py-2 text-black hover:bg-gray-700 px-3 rounded-xl border-2 border-black transition duration-300">Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container flex flex-col items-center justify-center font-mono lg:w-7/12 mx-auto px-4 pt-32 pb-12">
+    <div class="mb-8">
+      <h1 class="text-4xl font-bold text-left">BLOGS<br></h1>
+    </div>
+    <div class="w-full lg:w-7/12 bg-gray-200 text-black rounded-xl shadow-sm p-6 mb-8 min-h-[200px]">
+      <div class="mb-4">
+        <h2 class="text-xl font-bold mb-2">Soon This Page will be full of blogs</h2>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    navToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <footer class="bg-gray-200 text-black py-12 px-4 text-center border-t-2 border-black">
+    <div class="mb-2">
+      <h1 class="text-4xl lg:text-5xl font-mono font-bold">Varsha K<br></h1>
+    </div>
+    <div class="mb-4">
+      <h1 class="text-1xl font-mono px-2 lg:px-96 font-bold">True care begins with understanding, and every smile I help restore reminds me that compassion and connection are at the heart of healing.<br></h1>
+    </div>
+    <div class="mb-2">
+      <h1 class="text-3xl lg:text-4xl font-mono font-bold">Connect with me<br>Here</h1>
+    </div>
+    <div class="flex justify-center space-x-4">
+      <div class="bg-black border-2 border-white p-2 rounded-lg">
+        <a href="mailto:Varshakhevji617@gmail.com" class="text-white hover:text-white transition-colors duration-300">
+          <i data-lucide="mail" class="w-8 h-8"></i>
+        </a>
+      </div>
+      <div class="bg-black border-2 border-white p-2 rounded-lg">
+        <a href="https://linkedin.com/in/varsha-k-367222308" class="text-white hover:text-white transition-colors duration-300">
+          <i data-lucide="linkedin" class="w-8 h-8"></i>
+        </a>
+      </div>
+    </div>
+    <br>
+    <p>&copy; 2025 Varsha K. All Rights Reserved.</p>
+  </footer>
+</body>
+
+      </html>
