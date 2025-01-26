@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varsha K</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="Varsha.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      lucide.createIcons();
+    });
+  </script>
+</head>
+
+<body class="bg-white text-black">
+  <nav class="fixed top-5 left-1/2 w-11/12 max-w-5xl transform -translate-x-1/2 bg-white text-black border-2 border-black rounded-xl shadow-lg z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <div class="flex items-center">
+          <a href="#" class="text-2xl font-mono font-bold text-black">Varsha K</a>
+        </div>
+        <div class="lg:hidden">
+          <button id="nav-toggle" class="text-black focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex space-x-8">
+          <a href="index.html" class="text-black font-mono hover:bg-gray-700 px-3 py-2 rounded-xl border-2 border-black transition duration-300">Home</a>
+          <a href="blogs.html" class="text-black font-mono hover:bg-gray-700 px-3 py-2 rounded-xl border-2 border-black transition duration-300">Blogs</a>
+          <a href="resume.html" class="text-black font-mono hover:bg-gray-700 px-3 py-2 rounded-xl border-2 border-black transition duration-300">Resume</a>
+        </div>
+      </div>
+      <div id="mobile-menu" class="lg:hidden hidden py-4 rounded-b-lg px-4">
+        <a href="index.html" class="block py-2 text-black hover:bg-gray-700 px-3 rounded-xl border-2 border-black transition duration-300">Home</a>
+        <a href="blogs.html" class="block py-2 text-black hover:bg-gray-700 px-3 rounded-xl border-2 border-black transition duration-300">Blogs</a>
+        <a href="resume.html" class="block py-2 text-black hover:bg-gray-700 px-3 rounded-xl border-2 border-black transition duration-300">Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container flex flex-col items-center justify-center font-mono lg:w-7/12 mx-auto px-4 pt-32 pb-12">
+    <div class="mb-6">
+      <h1 class="text-3xl font-bold text-left">Hii Everyone 😄!<br></h1>
+    </div>
+    <div class="mb-10">
+      <img src="Varsha.jpg" alt="Varsha K" class="w-full h-auto md:w-[400px] md:h-[400px] rounded-xl border-2 border-black shadow-md object-cover" />
+    </div>
+    <div class="mb-6">
+      <h1 class="text-3xl font-bold text-left">ABOUT ME<br></h1>
+    </div>
+    <div class="px-4 mb-4">
+      <h2 class="text-1xl font-bold mb-6">
+        I am <span class="font-extrabold">Varsha K</span>, a dedicated dental assistant with a deep passion for patient care. My first experience in a clinic was incredibly rewarding, as it taught me the importance of effective communication and truly understanding patients' needs. During this time, I developed the ability to identify concerns and work closely with the dental team to provide tailored solutions that ensure the best outcomes.
+        <br><br>
+        What drives me is my commitment to patient comfort and making each treatment experience as positive as possible. I take pride in creating a welcoming environment where patients feel heard and cared for. As I continue to grow in this field, I’m excited to further enhance my skills and make meaningful contributions to the dental care community.
+      </h2>
+    </div>
+    <div class="bg-gray-200 w-full lg:w-7/12 text-black rounded-xl shadow-sm p-6 mt-4 mb-8 min-h-[200px]">
+      <div class="mb-4">
+        <h2 class="text-2xl font-bold mb-2">
+          Interested in Consultation about:<br>
+        </h2>
+        <h2 class="text-1xl font-bold mb-4">
+          • BDS in India (Bachelor of Dental Surgery)<br><br>
+          • DDS in the USA (Doctor of Dental Surgery)
+        </h2>
+        <div class="flex justify-center item-center">
+          <a href="mailto:Varshakhevji617@gmail.com" class="inline-flex rounded-full bg-black text-white p-3 shadow-lg shadow-white/50 active:shadow-xl active:shadow-white/50 transition duration-300">
+            Email me
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    navToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <footer class="bg-gray-200 text-black py-12 px-4 text-center border-t-2 border-black">
+    <div class="mb-2">
+      <h1 class="text-4xl lg:text-5xl font-mono font-bold">Varsha K<br></h1>
+    </div>
+    <div class="mb-4">
+      <h1 class="text-1xl font-mono px-2 lg:px-96 font-bold">True care begins with understanding, and every smile I help restore reminds me that compassion and connection are at the heart of healing.<br></h1>
+    </div>
+    <div class="mb-2">
+      <h1 class="text-3xl lg:text-4xl font-mono font-bold">Connect with me<br>Here</h1>
+    </div>
+    <div class="flex justify-center space-x-4">
+      <div class="bg-black border-2 border-white p-2 rounded-lg">
+        <a href="mailto:Varshakhevji617@gmail.com" class="text-white hover:text-white transition-colors duration-300">
+          <i data-lucide="mail" class="w-8 h-8"></i>
+        </a>
+      </div>
+      <div class="bg-black border-2 border-white p-2 rounded-lg">
+        <a href="https://linkedin.com/in/varsha-k-367222308" class="text-white hover:text-white transition-colors duration-300">
+          <i data-lucide="linkedin" class="w-8 h-8"></i>
+        </a>
+      </div>
+    </div>
+    <br>
+    <p>&copy; 2025 Varsha K. All Rights Reserved.</p>
+  </footer>
+</body>
+
+  </html>
